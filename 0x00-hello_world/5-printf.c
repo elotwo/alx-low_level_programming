@@ -1,6 +1,6 @@
 #include <stdio.h>
-/*
- * main: printing words
+/**
+ * main - void
  * Return: (0)Successful
  */
 int main(void)
