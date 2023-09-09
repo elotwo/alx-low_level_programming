@@ -5,11 +5,18 @@
  */
 int main(void)
 {
-	char nam;
+	char a = 97;
+	char b = 65;
 
-	for (nam = 65; nam <= 90; nam++)
+	while (a <= 122)
 	{
-		putchar(nam);
+		putchar(a);
+		a++;
+	}
+	while (b <= 90)
+	{
+		putchar(b);
+		b++;
 	}
 	putchar('\n');
 	return (0);
