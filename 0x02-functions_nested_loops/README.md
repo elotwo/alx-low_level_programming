@@ -1,2 +1,3 @@
- printing with the function putchar 
+printing with the function putchar 
 printing alphabet in lower case form 
+printing lower case alphabet 10x
