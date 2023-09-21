@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * _strcat - A program that joins two strings
  * @dest: pointer variable
