@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
 /**
- * _strcmp - A program that compare strings
- * @s1: first variable string
+ * _strcmp - A program for comparing strings
+ * @s1: first varaible string
  * @s2: secound variable string
  * Return: (0)
  */
