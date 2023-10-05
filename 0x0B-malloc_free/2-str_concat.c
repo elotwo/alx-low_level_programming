@@ -2,23 +2,40 @@
 #include <string.h>
 #include <stdlib.h>
 /**
+ * str_concat - A program that merges strings
+ * @s1: variable destination
+ * @s2: variable holding value
+ * Return: (0)
  */
 char *str_concat(char *s1, char *s2)
 {
-	if (s1 == 0 || s2 == 0)
-	{
-		return (NULL);
-	}
-	size_t total_len;
-	total_len = strlen(s1) + strlen(s2) + 1;
-	char *cat = (char *)malloc(total_len);
+	char *conct;
+	int i, ci;
 
-	if (cat == 0)
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	i = ci = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[ci] != '\0')
+		ci++;
+	conct = malloc(sizeof(char) * (i + ci + 1));
+	if (conct == NULL)
+		return (NULL);
+	i = ci = 0;
+	while (s1[i] != '\0')
 	{
-		return(NULL);
+		conct[i] = s1[i];
+		i++;
 	}
-	strcat(cat, s1);
-	strcat(cat, s2);
-	*cat = *s1;
-	return (cat);
+	while (s2[ci] != '\0')
+	{
+		conct[i] = s2[ci];
+		i++, ci++;
+	}
+	conct[i] = '\0';
+	return (conct);
 }
+
