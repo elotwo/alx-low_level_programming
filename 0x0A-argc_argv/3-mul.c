@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
+		printf("ERROR");
+		putchar('\n');
 		return (1);
 	}
 	a = atof(argv[1]);
