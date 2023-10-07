@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  * main - A proram prints all variables cammands
  * @argc: variable counter
@@ -13,13 +13,12 @@ int main(int argc, char *argv[])
 
 	if (argc < 2)
 	{
-		printf("%s", argv[0]);
-		putchar('\n');
+		printf("%s \n", argv[0]);
 		return (1);
 	}
 	for (i = 0; i <= argc; i++)
 	{
-		if ( argv[i] != NULL)
+		if (argv[i] != NULL)
 		{
 			printf("%s \n", argv[i]);
 		}
