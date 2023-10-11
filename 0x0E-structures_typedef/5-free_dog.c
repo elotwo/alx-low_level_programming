@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
+ * free_dog - A program to free mwemory d
+ * @d: variable d
  */
 void free_dog(dog_t *d)
 {
