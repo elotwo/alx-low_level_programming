@@ -40,10 +40,14 @@ char *_strcpy(char *dest, char *src)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog;
-	int lent1;
-	int lent2;
+	 int lent1;
+	 int lent2;
+	dog_t *dog = (dog_t *)malloc(sizeof(dog_t));
 
+	if (dog == NULL)
+	{
+		return (NULL);
+	}
 	lent1 = _strlen(name);
 	lent2 = _strlen(owner);
 	dog->name = malloc(sizeof(char) * (lent1 + 1));
