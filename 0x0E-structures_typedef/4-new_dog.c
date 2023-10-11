@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "dog.h"
 /**
  * _strlen - A program that print length of a string
  * @s: variable s
@@ -17,9 +18,6 @@ int _strlen(char *s)
 	}
 	return (i);
 }
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 /**
  * _strcpy -Program that copy strings
  * @dest: Variable destination for copy strings
@@ -43,8 +41,6 @@ char *_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-#include <stdio.h>
-#include "dog.h"
 /**
  * new_dog - A program store variable name and owner
  * @name: varaible name
