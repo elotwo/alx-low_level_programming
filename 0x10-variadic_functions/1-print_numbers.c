@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * print_numbers - function that takes arguiments of numbers and print
  * them
