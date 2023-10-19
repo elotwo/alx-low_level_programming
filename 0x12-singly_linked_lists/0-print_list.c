@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
 /**
  * print_list - A function that print all element of a structurw
