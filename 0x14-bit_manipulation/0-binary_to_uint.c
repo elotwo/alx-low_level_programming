@@ -2,6 +2,10 @@
 #include <string.h>
 #include "main.h"
 /**
+ * binary_to_uint - A function that convert decimals to
+ * binary
+ * @b: variable input where binary are tp be entered;
+ * Return: (0)
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -12,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 	return (0);
 	for (i = 0; i < length; i++)
-	{ 
+	{
 		if (b[i] == '0')
 		{
 			result = (result << 1);
@@ -28,4 +32,3 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (result);
 }
-	
