@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
+#include "main.h"
 /**
  * create_file - A program that create file with only owner
  * permission
