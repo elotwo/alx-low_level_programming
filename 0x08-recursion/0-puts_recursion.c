@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 /**
- * _puts_recursion - printing string
- * @s: pointer s
+ * _puts_recursion - A program that print a string recursively
+ * @s: variable for input string
  */
 void _puts_recursion(char *s)
 {
@@ -13,7 +14,8 @@ void _puts_recursion(char *s)
 	}
 	else
 	{
-		putchar(*s);
+		putchar (*s);
 		_puts_recursion(s + 1);
 	}
+
 }
