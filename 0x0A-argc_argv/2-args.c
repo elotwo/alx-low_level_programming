@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 /**
  * main - A proram that prints all arguiment
  * @argc: a variable that holds the number of commands
