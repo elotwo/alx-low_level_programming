@@ -2,6 +2,8 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
+ * print_all - A program that prints all format of characters
+ * @format: A varadic variable for entering characters
  */
 void print_all(const char * const format, ...)
 {
@@ -14,30 +16,31 @@ void print_all(const char * const format, ...)
 	{
 		while(format[i])
 		{
-			case 'c':
-				printf("%s%c", sep, va_arg(list, int));
-				break;
-			case 'i':
-				printf("%s%d", sep, va_arg(list, int));
-				break;
-			case 'f':
-				printf("%s%f", sep, va_arg(list, double));
-				break;
-			case 's':
-				str = va_arg(list, char *);
-				if (!str)
-					str = "(nil)";
-				printf("%s%s", sep, str);
-				break;
-			default:
-				i++;
-				continue;
+			switch(format[i])
+			{
+				case 'c':
+					printf("%s%c", sep, va_arg(list, int));
+					break;
+				case 'i':
+					printf("%s%d", sep, va_arg(list, int));
+					break;
+				case 'f':
+					printf("%s%f", sep, va_arg(list, double));
+					break;
+				case 's':
+					str = va_arg(list, char *);
+					if (!str)
+						str = "(nil)";
+					printf("%s%s", sep, str);
+					break;
+				default:
+					i++;
+					continue;
+			}
+			sep = ", ";
+			i++;
 		}
-		sep = ", ";
-		i++;
 	}
+	putchar('\n');
+	va_end(list);
 }
-printf('\n');
-va_end(list);
-}
-
