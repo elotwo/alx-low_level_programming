@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "hash_tables.h"
 /**
+ * hash_table_create - A Function that a hash table
+ * @size: variable size of for the hash table
+ * return: (0)sucessfull
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
