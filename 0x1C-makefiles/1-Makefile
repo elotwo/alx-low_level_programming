@@ -2,5 +2,4 @@ all: school
 CC = gcc
 SRC = main.c school.c
 school:
-	@echo "gcc main.c school.c -o school"
 	${CC} ${SRC} -o school
