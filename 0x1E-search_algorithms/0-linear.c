@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include "search_algos.h"
 /**
  * linear_search - This is a script that loops through an array.
